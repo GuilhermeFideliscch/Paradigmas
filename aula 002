@@ -1,1 +1,282 @@
-f
+1.
+A genealogia das linguagens não representa uma sequência em que cada linguagem nova substitui obrigatoriamente a anterior.
+Uma linguagem pode continuar sendo utilizada mesmo depois do surgimento de linguagens mais novas, principalmente quando ela atende bem a determinado domínio ou quando existe uma grande quantidade de programas e profissionais dependentes dela.
+Dois fatores históricos ajudam a explicar isso. O primeiro é o domínio de aplicação. Fortran, por exemplo, continuou sendo utilizado em aplicações científicas porque atendia muito bem às necessidades de cálculos numéricos e eficiência. 
+O segundo é a adoção pela comunidade e pelos usuários, que envolve conhecimento, ferramentas, investimentos e programas já existentes. O próprio Sebesta mostra que ALGOL 60 possuía características importantes, mas não conseguiu substituir Fortran, em parte porque muitos programadores não compreendiam ou não valorizavam suas vantagens.
+Portanto, influência histórica e popularidade comercial são coisas diferentes.
+
+2.
+Plankalkül é relevante porque, apesar de ter sido projetada em 1945 e nunca ter sido implementada naquela época, apresentava recursos muito avançados para seu período.
+Sua descrição só foi publicada em 1972, o que contribuiu para que várias de suas ideias não influenciassem diretamente outras linguagens, como os vetores, registros, estruturas semelhantes ao for e etc.
+
+3.
+As três abordagens procuravam diminuir a dificuldade de programar os computadores da época, mas utilizavam estratégias diferentes.
+Short Code representava expressões matemáticas por códigos e era executada por um interpretador puro. Isso facilitava a programação, mas tornava sua execução aproximadamente 50 vezes mais lenta que o código de máquina.
+Speedcoding, desenvolvido por John Backus para o IBM 701, também era interpretado, mas procurava ampliar a máquina com operações matemáticas, funcionando como uma espécie de calculadora virtual de ponto flutuante.
+Já A-0, A-1 e A-2, desenvolvidos por Grace Hopper e sua equipe, expandiam pseudocódigo em subprogramas escritos em código de máquina, de maneira semelhante à expansão de macros.
+Chamá-los simplesmente de compiladores modernos seria impreciso porque esses sistemas ainda eram muito primitivos.
+Eles não realizavam a tradução sofisticada de uma linguagem de alto nível para código de máquina característica dos compiladores modernos. 
+
+4.
+Fortran surgiu em um momento em que os programadores ainda desconfiavam de sistemas que traduzissem automaticamente seus programas. Muitos acreditavam que código de máquina escrito manualmente seria mais eficiente.
+O objetivo do projeto de Fortran era justamente combinar a facilidade de programação dos sistemas anteriores com uma eficiência próxima à do código escrito manualmente.
+A IBM investiu uma quantidade significativa de trabalho na otimização do compilador, e os resultados foram melhores do que muitos esperavam. Isso foi fundamental para a adoção de Fortran.
+
+5.
+Fortran e Lisp surgiram para problemas bastante diferentes.
+Fortran foi desenvolvida principalmente para computação científica, caracterizada por cálculos numéricos, especialmente operações de ponto flutuante, vetores e matrizes.
+Lisp, por outro lado, surgiu no contexto da inteligência artificial e computação simbólica. Seu foco estava na manipulação de símbolos e listas.
+A diferença aparece também na representação dos dados. Lisp utilizava principalmente átomos e listas, sendo as listas encadeadas fundamentais para a linguagem. Além disso, código e dados possuíam uma representação semelhante por meio de listas entre parênteses.
+Quanto ao estilo de computação, Fortran favorecia o modelo imperativo, baseado em variáveis, atribuições e operações numéricas. Lisp favorecia o modelo funcional, em que computações são realizadas pela aplicação de funções e a recursão pode substituir os laços tradicionais.
+
+6.
+Três contribuições importantes foram estrutura de blocos permitindo organizar melhor programas e seus escopos, recursão fundamental para expressar determinados algoritmos de maneira natural eestruturas de controle mais bem estruturadas influenciando várias linguagens posteriores.
+A influência conceitual não depende necessariamente de popularidade comercial. Uma linguagem pode introduzir boas ideias que são posteriormente incorporadas por outras linguagens.
+
+7.
+Cobol foi projetada especificamente para processamento comercial, portanto suas características foram determinadas pelas necessidades desse domínio.
+Uma das principais influências foi FLOW-MATIC, criada por Grace Hopper. A ideia era que programas de processamento de dados pudessem ser escritos utilizando sentenças semelhantes ao inglês, tornando-os mais acessíveis a pessoas ligadas ao negócio.
+Por isso, COBOL priorizou identificadores mais longos e legíveis, estruturas para representar registros
+processamento de caracteres, números decimaisgeração de relatórios.
+Os registros eram particularmente importantes porque aplicações comerciais trabalhavam intensamente com dados estruturados, como informações de clientes, produtos e transações.
+Assim, o domínio e o público determinaram a filosofia da linguagem: em vez de priorizar apenas eficiência matemática, COBOL buscou legibilidade e facilidade de compreensão para processamento de dados comerciais.
+
+8.
+Basic e PL/I procuraram ampliar o alcance da programação, mas fizeram isso de maneiras diferentes.
+Basic buscou principalmente tornar a programação acessível a iniciantes e pessoas que não eram especialistas em computação. Sua primeira versão era pequena e relativamente fácil de aprender.
+Mais tarde, tornou-se muito popular nos microcomputadores justamente porque suas implementações podiam funcionar em máquinas com pouca memória.
+O compromisso de Basic foi, portanto, simplicidade e facilidade de aprendizagem em troca de recursos e estrutura mais limitados.
+PL/I, por sua vez, tentou ampliar o alcance em relação aos domínios de aplicação. A proposta era criar uma linguagem capaz de atender aplicações científicas, comerciais e de sistemas, reunindo recursos de Fortran, ALGOL 60, COBOL e outras linguagens.
+Seu compromisso foi praticamente o oposto: grande abrangência em troca de maior complexidade.
+
+9.
+Linguagem	Foco	Contribuição duradoura
+APL	Computação com vetores e operações matemáticas	Alta expressividade e operações vetoriais
+SNOBOL	Processamento de textos	Poderoso casamento de padrões
+SIMULA 67	Simulação e abstração de dados	Classes e fundamentos da orientação a objetos
+
+APL possuía muitos operadores especializados para trabalhar com vetores e matrizes. Isso proporcionava grande expressividade, embora prejudicasse a legibilidade.
+
+SNOBOL foi criada especificamente para processamento de texto, tendo como característica central operações poderosas de casamento de padrões.
+
+SIMULA 67 foi importante porque introduziu classes como mecanismo de abstração de dados. Essas ideias posteriormente se tornaram fundamentais para a programação orientada a objetos.
+
+10. Ortogonalidade e ALGOL 68
+
+Ortogonalidade significa que um conjunto relativamente pequeno de construções primitivas pode ser combinado de diversas maneiras e que essas combinações são, em geral, válidas e significativas.
+
+A ALGOL 68 levou esse princípio muito longe. Cada construção possuía um tipo e havia poucas restrições sobre as combinações possíveis. Isso permitia grande regularidade, mas também podia gerar construções extremamente complexas.
+
+Portanto, existe uma diferença entre regularidade e simplicidade. Uma linguagem pode ser muito regular porque possui poucas exceções às suas regras, mas ainda assim ser difícil de utilizar caso permita combinações excessivamente numerosas ou complexas.
+
+Logo, uma linguagem muito ortogonal não é automaticamente fácil de usar. ALGOL 68 é justamente um exemplo disso: sua ortogonalidade produziu ideias importantes, como tipos definidos pelo usuário, mas também aumentou a complexidade da linguagem.
+
+11. ALGOL → Pascal → C versus Prolog
+
+Uma cadeia simplificada de influência pode ser apresentada assim:
+
+ALGOL 60 → ALGOL-W → Pascal → C → C++
+
+ALGOL influenciou fortemente o projeto de Pascal. Pascal procurou obter maior simplicidade de projeto, mantendo muitas ideias da família ALGOL. C, por sua vez, pertence à linhagem de linguagens imperativas derivadas dessa família. O próprio Sebesta afirma que as linguagens imperativas devem parte de seu projeto a ALGOL 60 e/ou ALGOL 68.
+
+Essa linhagem é predominantemente imperativa, pois os programas especificam operações, estados, variáveis e controle de execução.
+
+Prolog segue outra direção. É uma linguagem declarativa e lógica. Em vez de especificar detalhadamente como obter uma solução, o programador descreve fatos e regras que caracterizam o problema. O interpretador utiliza inferência, unificação e backtracking para encontrar respostas.
+
+12. Pequena base Prolog
+
+Uma pequena base poderia ser descrita assim:
+
+Fatos:
+
+João é pai de Maria.
+Maria é mãe de Pedro.
+
+Regra:
+
+Se uma pessoa é pai ou mãe de outra pessoa e essa segunda pessoa é pai ou mãe de uma terceira, então a primeira pessoa é avó ou avô da terceira.
+
+Consulta:
+
+João é avô de Pedro?
+
+Em uma representação aproximada de Prolog:
+
+parent(joao, maria).
+parent(maria, pedro).
+
+grandparent(X, Z) :- parent(X, Y), parent(Y, Z).
+
+grandparent(joao, pedro).
+
+O ponto importante é que isso não é apenas armazenamento de dados. A base contém fatos e uma regra, e o sistema realiza inferência automática para verificar se a consulta pode ser satisfeita. O Prolog utiliza resolução, unificação e rastreamento para trás para procurar uma solução.
+
+Portanto, o programa descreve relações e condições, em vez de simplesmente guardar informações.
+
+13. Ada e sistemas críticos
+
+Ada foi criada a partir de um processo de projeto de grande escala e com requisitos relacionados ao desenvolvimento de sistemas complexos.
+
+A confiabilidade é importante nesse contexto porque erros em sistemas críticos podem gerar consequências graves. Para isso, Ada oferece mecanismos de tipos rigorosos, abstração de dados, tratamento de exceções e unidades genéricas.
+
+Os pacotes permitem encapsular dados, tipos e procedimentos, favorecendo a abstração e a organização dos programas.
+
+A linguagem também possui concorrência, por meio de unidades chamadas tarefas e do mecanismo de rendezvous, que permite sincronização e comunicação entre tarefas.
+
+Assim, tipos fortes ajudam a detectar erros, pacotes ajudam a controlar a complexidade e a concorrência permite representar sistemas que precisam executar atividades simultaneamente. Esses recursos são especialmente relevantes para sistemas em que confiabilidade e organização são prioridades.
+
+14. Smalltalk, C++ e Java
+
+Em Smalltalk, os objetos são o centro absoluto da linguagem. É uma linguagem orientada a objetos pura: tudo é objeto e as computações são realizadas por passagem de mensagens. A vinculação e a verificação de tipos são dinâmicas.
+
+C++ adotou ideias de orientação a objetos, mas precisava manter compatibilidade com C. Por isso, tornou-se uma linguagem híbrida, combinando programação imperativa/procedural e orientação a objetos. Seu objetivo era permitir abstração, classes e herança sem impor grandes penalidades de desempenho em relação a C.
+
+Java foi projetada posteriormente com base em C++, mas buscou ser menor, mais simples e mais confiável. Diferentemente de C++, foi concebida para apoiar a orientação a objetos sem manter todo o conjunto de características procedurais da linguagem de origem.
+
+A estratégia de portabilidade de Java estava ligada à execução por uma máquina virtual e ao uso de código intermediário, permitindo que o mesmo programa fosse utilizado em diferentes plataformas com o suporte adequado.
+
+15. Java e a Web
+
+A primeira aplicação de Java não foi a Web. A linguagem foi originalmente criada para software destinado a dispositivos eletrônicos de consumo. Entretanto, esses produtos não chegaram a ser comercializados.
+
+Quando a Web começou a se tornar amplamente utilizada e surgiram navegadores gráficos, Java encontrou um novo contexto no qual seus recursos eram úteis. Os applets Java, pequenos programas executados em navegadores e capazes de produzir conteúdo dentro de documentos Web, tornaram-se populares na segunda metade dos anos 1990.
+
+Isso demonstra que o sucesso de uma linguagem não depende apenas de suas características originais. Mudanças no ambiente tecnológico podem criar um novo domínio de aplicação no qual uma linguagem existente se torna especialmente adequada.
+
+Java não foi criada para dominar a Web. A Web apareceu e, de certa maneira, encontrou Java esperando no ponto de ônibus.
+
+16. Perl, JavaScript, PHP, Python, Ruby e Lua
+
+Essas linguagens são chamadas de scripting, mas possuem origens e características bastante diferentes.
+
+Linguagem	Domínio inicial	Estruturas de dados / característica	Implementação
+Perl	Administração de sistemas e processamento de texto	Dispersões, listas e casamento de padrões	Linguagem de scripting
+JavaScript	Programação no navegador	Vetores e objetos	Interpretada no navegador
+PHP	Web do lado servidor	Vetores normais e associativos	Interpretada no servidor
+Python	Administração de sistemas, CGI e tarefas pequenas	Listas, tuplas e dicionários	Interpretada
+Ruby	Linguagem geral, com forte orientação a objetos	Matrizes associativas e objetos	Interpretada
+Lua	Extensão/scripting de aplicações	Tabelas	Código intermediário + interpretação
+
+Perl foi associada principalmente à administração de sistemas, processamento de texto e tarefas de scripting. JavaScript ficou fortemente associada à programação no navegador e à manipulação dinâmica de documentos HTML.
+
+PHP foi criada para Web do lado servidor. O código PHP é processado no servidor e normalmente produz HTML como saída.
+
+Python foi projetada como linguagem de scripting orientada a objetos e interpretada, sendo usada em administração de sistemas, CGI e outras tarefas relativamente pequenas. Ela possui listas, tuplas e dicionários como estruturas importantes.
+
+Ruby utiliza tipagem dinâmica e possui forte orientação a objetos. Lua é pequena, extensível, possui tabelas como sua principal estrutura de dados e utiliza código intermediário interpretado.
+
+Portanto, “scripting” descreve uma categoria de uso/implementação, não significa que todas essas linguagens sejam conceitualmente iguais.
+
+17. C# em relação a Java e C++
+
+Duas decisões importantes de C# podem ser comparadas às de Java e C++.
+
+Primeira: enumerações.
+C# tornou seus tipos enum mais seguros que os de C++, pois eles não são implicitamente convertidos para inteiros. Isso reduz problemas relacionados a tipos.
+
+Segunda: delegates.
+C++ possui ponteiros para funções, mas eles apresentam problemas de segurança associados aos ponteiros. C# introduziu os delegates, que são referências a subprogramas orientadas a objetos e com segurança de tipos. Eles podem ser utilizados em eventos, callbacks e controle de execução.
+
+Além disso, C# introduziu melhorias em relação a recursos de C++ e Java, como foreach, propriedades, boxing/unboxing e vetores retangulares. A proposta geral era fornecer uma linguagem adequada ao desenvolvimento baseado em componentes dentro do ambiente .NET.
+
+18. XSLT e JSP
+
+As duas são linguagens híbridas porque misturam marcação e recursos de programação.
+
+XSLT
+
+Entrada:
+Um documento XML e um documento XSLT.
+
+Processamento:
+O processador encontra padrões definidos por templates e aplica transformações aos dados.
+
+Saída:
+Outro documento, normalmente XML, HTML ou texto.
+
+XSLT possui recursos semelhantes aos de programação, incluindo iteração e ordenação.
+
+JSP
+
+Entrada:
+Um documento JSP, normalmente contendo HTML e código Java, solicitado por um navegador.
+
+Processamento:
+O processador JSP transforma o documento em um servlet. O código Java é incorporado ao servlet e as partes HTML são transformadas em instruções de saída.
+
+Saída:
+Um documento HTML produzido pelo servlet e enviado ao navegador.
+
+Assim, XSLT trabalha principalmente com transformação de documentos XML, enquanto JSP trabalha com geração dinâmica de documentos Web utilizando Java no servidor.
+
+19. Linha do tempo com oito linguagens e quatro paradigmas
+
+Uma possível linha do tempo é:
+
+1945 – Plankalkül
+↓ influência conceitual em estruturas de dados e controle
+
+1957 – Fortran
+↓ influência em linguagens imperativas posteriores
+
+1960 – ALGOL 60
+↓ influência estrutural e de controle
+
+1967 – SIMULA 67
+↓ influência na abstração de dados e orientação a objetos
+
+1970 – Prolog
+→ mudança para programação lógica/declarativa
+
+1983 – Ada
+↓ influência em tipos, abstração e confiabilidade
+
+1985 – C++
+↓ combinação de paradigma imperativo e orientação a objetos
+
+1995 – Java
+↓ orientação a objetos + execução baseada em código intermediário
+
+Essa sequência não deve ser interpretada apenas cronologicamente. As ligações representam diferentes tipos de influência:
+
+ALGOL → Pascal/C: influência de projeto imperativo;
+SIMULA → Smalltalk/C++: influência em abstração de dados e objetos;
+Lisp → linguagens funcionais: influência no paradigma funcional;
+Prolog: influência de lógica e programação declarativa;
+C++ → Java: influência de orientação a objetos e sintaxe;
+Java → linguagens posteriores: influência de portabilidade e máquina virtual.
+
+O próprio livro apresenta uma genealogia das linguagens e deixa claro que as versões iniciais são organizadas cronologicamente, mas as relações entre elas representam desenvolvimento e influência, não simplesmente substituição.
+
+20. Estudo de caso
+
+Uma equipe que precisa escolher tecnologias para quatro problemas diferentes poderia considerar as seguintes famílias:
+
+Problema	Família indicada	Justificativa histórica	Trade-off
+Cálculo científico	Fortran / família ALGOL	Fortran nasceu para computação científica e priorizou eficiência numérica	Alto desempenho × menor flexibilidade para outros domínios
+Regras declarativas	Prolog / programação lógica	Prolog foi criada para representar fatos, regras e realizar inferência	Expressão declarativa × controle de execução mais limitado
+Aplicação Web interativa	JavaScript / linguagens de scripting	JavaScript foi fortemente associada à programação no navegador e manipulação do HTML	Facilidade e interatividade × tipagem dinâmica e maior complexidade em grandes sistemas
+Firmware restrito	C / família de linguagens imperativas de sistemas	C oferece controle próximo ao hardware e baixo custo de execução	Controle e eficiência × menor segurança e abstração
+Cálculo científico
+
+A escolha histórica mais coerente seria Fortran, porque a linguagem foi criada justamente no contexto das aplicações científicas, nas quais operações de ponto flutuante, vetores, matrizes e eficiência eram prioridades.
+
+Trade-off: alto desempenho e adequação ao cálculo científico em troca de menor foco em abstrações de outros domínios.
+
+Regras declarativas
+
+Para regras e inferência, a escolha seria Prolog. Sua programação é não procedural: o programador descreve fatos e regras e o sistema procura soluções por resolução, unificação e backtracking.
+
+Trade-off: descrição natural das relações e regras × menor controle direto sobre o fluxo de execução.
+
+Aplicação Web interativa
+
+Para uma aplicação Web interativa no navegador, a família de JavaScript é historicamente adequada. O livro mostra que JavaScript foi desenvolvida para aplicações no ambiente Web e possui integração com o modelo de documentos HTML por meio do DOM.
+
+Trade-off: facilidade de manipular documentos e responder a eventos × características dinâmicas que podem dificultar a verificação antecipada de certos erros.
+
+Firmware restrito
+
+Para firmware com recursos limitados, uma linguagem da família de C é uma escolha coerente devido ao seu baixo nível de abstração em relação ao hardware e ao histórico de utilização em sistemas.
+
+Trade-off: controle e eficiência × menor segurança e maior responsabilidade do programador sobre detalhes da execução.
